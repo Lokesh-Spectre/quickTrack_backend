@@ -4,7 +4,7 @@ import getRoutesModel from '../models/routes.js';
 const router = express.Router();
 
 // Create a new route
-router.post('/routes', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { route_no, route_name, bus_nos } = req.body;
     const routes = await getRoutesModel();

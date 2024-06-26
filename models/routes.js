@@ -1,5 +1,6 @@
 import { DataTypes } from "sequelize";
 import {db} from "../db.js";
+import constants from "../constants.js"
 
 async function get() {
   const routes = db.define("routes",
@@ -14,7 +15,7 @@ async function get() {
       timestamps: true
     }
   );
-  await routes.sync({ force: false });
+  await routes.sync({ force: constants.forceSync });
   return routes;
 };
 

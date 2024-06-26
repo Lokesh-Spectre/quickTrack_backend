@@ -11,4 +11,5 @@ const DB = {
 const server ={
     PORT:3000
 }
-export default { DB,TARGET,server };
+const forceSync = false;
+export default { DB,TARGET,server,forceSync };

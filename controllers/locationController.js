@@ -8,9 +8,11 @@ router.get("/live/:bus_no",(req,res)=>{
     const {bus_no} = req.params;
 
     if (bus_no in current_locations){
+        const {lat,long,alt,timestamp}= current_locations[bus_no]
         res.status(200).json({
             status:"success",
-            location:current_locations[bus_no]
+            location:{lat,long,alt},
+            timestamp
         });
     } else{
         res.status(400).json({
