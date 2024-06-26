@@ -8,7 +8,7 @@ controller.start = (app)=>{
     app.use("/sensors",sensorRoute);
     app.use("/locations",locationRoute);
     app.use("/routes",routesRoute);
-    app.use("/stopping",stoppingRoute);
+    app.use("/stoppings",stoppingRoute);
 
 }
 export default controller;

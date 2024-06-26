@@ -24,6 +24,8 @@ The system exposes several RESTful API endpoints for interacting with the bus tr
 * [locations](./docs/location.md)
 * [routes](./docs/routes.md)
 * [sensors](./docs/sensors.md)
+* [stoppings](./docs/stoppings.md)
+
 
 ## Getting Started
 * installing dependencies
